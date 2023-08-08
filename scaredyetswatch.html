@@ -1,0 +1,438 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+    <title> Scared Yet/Movies</title>
+
+      <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" href="themes/scared_yet.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <style>
+
+        .logo {
+            float: left;
+            width: 20pc;
+            padding-left: 4px;
+            padding-top: 4px;
+        }
+
+        .padding {
+            padding-left: 10px;
+        }
+
+        /*changes the color of the header font and the fonts size*/
+
+        h1> span {
+            color: Red;
+            text-align: center;
+            font-size: 800%;
+
+        }
+
+        /* sets the id for the first paragraph to be aligned to the left*/
+
+        #p {
+            float: left;
+            max-width: 20ch;
+            padding-top: 5%;
+        }
+
+        /* sets the id for the 2nd paragraph to be aligned to the right of the first paragraph.*/
+
+        #q {
+            float: center;
+            padding-left: 30%;
+            padding-top: 15%;
+            max-width: 40ch;
+        }
+        /* sets an id used for the copyright symbol */
+        .copyright {
+            float: left;
+            width: 80px;
+            padding-left: 20px;
+            padding-right: 15px;
+        }
+        /* position the dropdown content*/
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+        /*dropdown content*/
+        .dropdown-options {
+            display: none;
+            position: absolute;
+            overflow: auto;
+        }
+        /* sets the mouse for hover and displays the dropdown content*/
+        .dropdown:hover .dropdown-options {
+            display: block;
+        }
+        /*class to center the dropdown boxes.*/
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+.background
+{
+  background-image: url(b&wScarymovie.jpg);
+background-size: cover;
+
+}
+#pic1 {
+  background: url(scarypic.jpg) center center;
+  background-size: cover;
+}
+#pic2 {
+  background: url(pig.jpg) center center;
+  background-size: cover;
+}
+#pic3 {
+  background: url(dunno.jpg) center center;
+  background-size: cover;
+}
+    </style>
+</head>
+
+<body>
+
+    <div data-role="page" data-theme="b" data-add-back-btn="true" class = "background" id="main">
+        <div data-role="header" >
+            <img src="ChuckyLogo.png" alt="picpic" class="logo" />
+            <h1>
+              <span>
+                Scared Yet
+              </span>
+            </h1>
+        </div>
+        <div class="center">
+            <div class="dropdown">
+                <input type="button" onclick="window.location.href='#main'" value="Home" />
+            </div>
+            <div class="dropdown">
+                <button>SciFi/Fantasy Horror</button>
+                <div class="dropdown-options">
+                    <a href="#scifi">Top 10<br></a>
+                    <a href="#bscifi">Top 100<br></a>
+                    <a href="#cscifi">Up Coming</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button>Drama Horror</button>
+                <div class="dropdown-options">
+                    <a href="#drama">Top 10<br></a>
+                    <a href="#">Top 100<br></a>
+                    <a href="#">Up Coming</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <input type = "button" onclick="window.location.href='#vote'" value = "Vote"/>
+
+            </div>
+        </div>
+<br>
+<br>
+<br>
+<div data-role = "content" >
+  <div class="ui-grid-b"  >
+
+  <div class="ui-block-a"><div class="ui-bar ui-bar-a" style="height:120px" id = "pic1">Trending Hits</div></div>
+
+  <div class="ui-block-b"><div class="ui-bar ui-bar-a" style="height:120px" id = "pic2">Latest News</div></div>
+  <div class="ui-block-c"><div class="ui-bar ui-bar-a" style="height:120px" id = "pic3">Death</div></div>
+</div>
+
+        <p style="text-align:left;" id="p">
+
+
+            Come vote on your favorite horror movies. You can choose categories from past or present movies. Help build this site to become the number on horror movie reviewer on the web.
+
+        </p>
+
+        <p style="text-align:right;" id="q">
+            At Scared Yet we are here to bring you the best top list for anything related to horror from the movie industry. If you like what you see and want to see this site continue to grow, click on the donors button located on the bottom of the page.
+        </p>
+</div>
+        <div data-role="footer" data-theme="a" >
+            <img src="copyrightsymbol.png" alt="copyright" class="copyright" />
+            <p>Copyright</p>
+            <div class="padding">2023 Kenneth Adams</div>
+        </div>
+    </div>
+    <div data-role= "page" id = "scifi" data-add-back-btn="true" class = "background" data-theme="b">
+      <div data-role="header" data-add-back-btn="true">
+          <img src="ChuckyLogo.png" alt="picpic" class="logo" />
+          <h1>
+            <span>
+              Scared Yet
+            </span>
+          </h1>
+      </div>
+      <div class="center">
+          <div class="dropdown">
+              <input type="button" onclick="window.location.href='#main'" value="Home" />
+          </div>
+          <div class="dropdown">
+              <button>SciFi/Fantasy Horror</button>
+              <div class="dropdown-options">
+                  <a href="#scifi">Top 10<br></a>
+                  <a href="#bscifi">Top 100<br></a>
+                  <a href="#cscifi">Up Coming</a>
+              </div>
+          </div>
+          <div class="dropdown">
+              <button>Drama Horror</button>
+              <div class="dropdown-options">
+                  <a href="#drama">Top 10<br></a>
+                  <a href="#">Top 100<br></a>
+                  <a href="#">Up Coming</a>
+              </div>
+          </div>
+          <div class="dropdown">
+              <input type = "button" onclick="window.location.href = '#vote'" value = "Vote"/>
+
+          </div>
+      </div>
+      <div data-role = "content" style = "padding-top: 80px">
+          <ol data-role="listview" data-theme="c" data-filter="true" data-icon="star">
+            <li><a href="https://www.youtube.com/watch?v=jQ5lPt9edzQ">Alien</a></li>
+            <li><a href="https://www.youtube.com/watch?v=5ftmr17M-a4">The Thing</a></li>
+            <li><a href="https://www.youtube.com/watch?v=oSeQQlaCZgU">Aliens</a></li>
+            <li><a href="https://www.youtube.com/watch?v=_1wDBNHYDv8">Predator</a></li>
+            <li><a href="https://www.youtube.com/watch?v=fj1SHpBsY7w">The Fly</a></li>
+            <li><a href="https://www.youtube.com/watch?v=k64P4l2Wmeg">The Terminator</a></li>
+            <li><a href="https://www.youtube.com/watch?v=q81Jiba9Pkg">The Brood</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dSBsNeYqh-k">The Invisible Man</a></li>
+            <li><a href="https://www.youtube.com/watch?v=BpdDN9d9Jio">A Quiet Place Part II</a></li>
+            <li><a href="https://www.youtube.com/watch?v=7S1yhSp5jaI">Under The Skin</a></li>
+          </ol>
+        </div>
+      <div data-role="footer" data-theme="a">
+          <img src="copyrightsymbol.png" alt="copyright" class="copyright" />
+          <p>Copyright</p>
+          <div class="padding">2023 Kenneth Adams</div>
+      </div>
+  </div>
+    <div data-role= "page" id = "drama" data-add-back-btn="true" class = "background" data-theme="b">
+      <div data-role="header" data-add-back-btn="true">
+          <img src="ChuckyLogo.png" alt="picpic" class="logo" />
+          <h1>
+            <span>
+              Scared Yet
+            </span>
+          </h1>
+      </div>
+      <div class="center">
+          <div class="dropdown">
+              <input type="button" onclick="window.location.href='#main'" value="Home" />
+          </div>
+          <div class="dropdown">
+              <button>SciFi/Fantasy Horror</button>
+              <div class="dropdown-options">
+                  <a href="#scifi">Top 10<br></a>
+                  <a href="#bscifi">Top 100<br></a>
+                  <a href="#cscifi">Up Coming</a>
+              </div>
+          </div>
+          <div class="dropdown">
+              <button>Drama Horror</button>
+              <div class="dropdown-options">
+                  <a href="#drama">Top 10<br></a>
+                  <a href="#">Top 100<br></a>
+                  <a href="#">Up Coming</a>
+              </div>
+          </div>
+          <div class="dropdown">
+              <input type = "button" onclick="window.location.href = '#vote'" value = "Vote"/>
+
+          </div>
+      </div>
+      <div data-role = "content" style = "padding-top: 80px">
+          <ol data-role="listview" data-theme="c" data-filter="true" data-icon="star">
+            <li><a href="https://www.youtube.com/watch?v=V6wWKNij_1M">Hereditary</a></li>
+            <li><a href="https://www.youtube.com/watch?v=0Nu7Z9AxGNg">Bones and All</a></li>
+            <li><a href="https://www.youtube.com/watch?v=S014oGZiSdI">The Shining</a></li>
+            <li><a href="https://www.youtube.com/watch?v=WR7cc5t7tv8">A Quiet Place</a></li>
+            <li><a href="https://www.youtube.com/watch?v=2ZIxi12s1dY">3:33</a></li>
+            <li><a href="https://www.youtube.com/watch?v=mW6TlPMHXgk">Frailty</a></li>
+            <li><a href="https://www.youtube.com/watch?v=c2jfYYdvRDM">Seconds</a></li>
+            <li><a href="https://www.youtube.com/watch?v=FeWm_jk7G80">In the Mouth of Madness</a></li>
+            <li><a href="https://www.youtube.com/watch?v=WUR-Ix8q72Q">Dawning</a></li>
+            <li><a href="https://www.youtube.com/watch?v=INHM--6XQzQ">Speak No Evil</a></li>
+          </ol>
+        </div>
+      <div data-role="footer" data-theme="a">
+          <img src="copyrightsymbol.png" alt="copyright" class="copyright" />
+          <p>Copyright</p>
+          <div class="padding">2023 Kenneth Adams</div>
+      </div>
+
+  </div>
+  <div data-role= "page" id = "vote" data-add-back-btn="true" class = "background" data-theme="b">
+
+    <div data-role="header" data-add-back-btn="true">
+      <a href="#myPanel" class="ui-btn ui-btn-inline">More Voting Sites</a>
+        <img src="ChuckyLogo.png" alt="picpic" class="logo" />
+        <h1>
+          <span>
+            Scared Yet
+          </span>
+        </h1>
+    </div>
+    <div class="center">
+        <div class="dropdown">
+            <input type="button" onclick="window.location.href='#main'" value="Home" />
+        </div>
+        <div class="dropdown">
+            <button>SciFi/Fantasy Horror</button>
+            <div class="dropdown-options">
+                <a href="#scifi">Top 10<br></a>
+                <a href="#bscifi">Top 100<br></a>
+                <a href="#cscifi">Up Coming</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button>Drama Horror</button>
+            <div class="dropdown-options">
+                <a href="#drama">Top 10<br></a>
+                <a href="#">Top 100<br></a>
+                <a href="#">Up Coming</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <input type = "button" onclick="window.location.href = '#vote'" value = "Vote"/>
+
+        </div>
+
+    </div>
+    <div data-theme="a" data-role= "content">
+
+      <form id= "contactForm" action="contact.php" method="POST">
+      <div class="field">
+
+      <label for="fname">First name:</label>
+
+      <input type="text" name="fname" id="fname">
+    </div>
+    <div class="field">
+      <label for="lname">Last Name:</label>
+
+      <input type="text" name="lname" id="lname">
+    </div>
+    <div class="field">
+      <label for="email">Email:</label>
+
+      <input type="text" name="email" id="email">
+    </div>
+    <div class="field">
+
+      <label for="number">Phone Number:</label>
+
+      <input type="text" name="number" id="number">
+    </div>
+    <div class="field">
+
+      <label for="favmovie">Favorite Horror Movie:</label>
+
+      <input type="text" name="favmovie" id="favmovie">
+    </div>
+    <div class="field">
+
+        <button onclick="deleteItems()"> Clear local storage </button>
+    </div>
+    <div class = "field">
+    <input type = "submit" value="Submit Button" >
+    </div>
+    </form>
+
+    </div>
+    <script>
+    function deleteItems() {
+     // Clear localStorage items
+     localStorage.clear();
+    }
+    window.onload = function() {
+
+    // Check for LocalStorage support.
+    if (localStorage) {
+
+      // Add an event listener for form submissions
+      document.getElementById('contactForm').addEventListener('submit', function() {
+        // Get the value of the name field.
+        var ffname = document.getElementById('fname').value;
+        var llname = document.getElementById('lname').value;
+        var iemail = document.getElementById('email').value;
+        var inumber = document.getElementById('number').value;
+        var movie = document.getElementById('favmovie').value;
+
+        let person =
+        {
+          firstname : ffname,
+          lastname : llname,
+          Email : iemail,
+          phoneNumber : inumber,
+          favoritemovie : movie
+        };
+        var oldest = [];
+
+    if  (localStorage.getItem("person") === null)
+    {
+     oldest.push(person);
+    }
+
+    else {
+    oldest = JSON.parse(localStorage.getItem("person"))
+    oldest.push(person);
+    }
+        let hope = JSON.stringify(oldest);
+
+        localStorage.setItem("person", hope );// Save the name in localStorage.
+
+
+        let newest = JSON.parse(localStorage.getItem("person"));
+
+        document.write("<h1> Fan favorites</h1>")
+        let i = 0;
+        while (i < newest.length)
+        {
+
+        document.write(newest[i].favoritemovie);
+        document.write("<br>");
+        i++;
+        }
+
+
+      });
+
+    }
+
+    }
+
+    </script>
+    </div>
+    <div data-role="panel" id="myPanel" >
+
+    <h2>Best Horror</h2>
+
+    <ul data-role="listview" data-theme="c" >
+
+    <li class="menu"><a href="#">Make believe voting site 1</a></li>
+
+    <li class="menu"><a href="#">Make believe voting site 2</a></li>
+
+    <li class="menu"><a href="#">Make believe voting site 3</a></li>
+
+    <li class="menu"><a href="#">Make believe voting site 4</a></li>
+
+
+    </ul>
+
+
+    </div>
+</body>
+
+</html>
